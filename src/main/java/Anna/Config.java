@@ -1,0 +1,15 @@
+package Anna;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Config {
+    @Bean(name = "productService")
+    public ProductService productService{return new ProductService();}
+
+
+
+
+}
+
