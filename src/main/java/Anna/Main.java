@@ -8,8 +8,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-        ProductService productService = context.getBean(,ProductService.class);
-        OrderService orderService = context.getBean(,OrderService.class);
-        Cart cart = context.getBean(,Cart.class);
+        ProductService productService = context.getBean("productService",ProductService.class);
+        OrderService orderService = context.getBean("orderService",OrderService.class);
+        Cart cart = context.getBean("cart",Cart.class);
     }
+
+
 }

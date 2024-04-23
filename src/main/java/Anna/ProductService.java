@@ -10,14 +10,23 @@ public class ProductService {
     @Autowired
     private OrderService orderService;
 
-    public static void getProductInConsol(){
-        List<Product> catalog = new ArrayList<>();
-        for (Product c: catalog) {
-            System.out.println(c);
+    List<Product> catalog;
+
+    public void fillList(List<Product> products) {
+        for (Product c : catalog) {
+            catalog.add(c);
         }
 
-    }
-    public static Product findProduct(Product p){
-        return p;
+
+        public static void getProductInConsol() {
+
+            for (Product c : catalog) {
+                System.out.println(c);
+            }
+
+        }
+        public Product findProduct(Product p){
+            return p;
+        }
     }
 }
