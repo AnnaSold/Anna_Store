@@ -15,6 +15,7 @@ public class OrderService {
             totalCost += p.getCost();
     }
         System.out.println("ИТОГО " + totalCost);
+   cart.setCart(null);
 
 }
 }

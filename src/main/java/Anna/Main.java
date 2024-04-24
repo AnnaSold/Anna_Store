@@ -29,6 +29,7 @@ public class Main {
         cart.addProduct(p3);
 
         orderService.makeOrder(cart);
+        System.out.println(cart);
 
 
     }
