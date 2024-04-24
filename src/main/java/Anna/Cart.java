@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 @Component
 public class Cart {
-    public static List<Product> addProsuct(Product p){
-        List<Product> cart = new ArrayList<>();
-        return cart;
+    List<Product> cart = new ArrayList<>();
+    public  void addProduct(Product p){
+        cart.add(p);
     }
 }
