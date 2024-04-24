@@ -10,7 +10,7 @@ public class OrderService {
 
     public void makeOrder(Cart cart){
         double totalCost = 0;
-        for (Product p : cart.cart) {
+        for (Product p : cart.getCart()) {
             System.out.println(p);
             totalCost += p.getCost();
     }

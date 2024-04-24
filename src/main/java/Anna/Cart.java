@@ -7,7 +7,11 @@ import java.util.List;
 
 @Component
 public class Cart {
-    List<Product> cart = new ArrayList<>();
+    private List<Product> cart = new ArrayList<>();
+
+    public List<Product> getCart() {
+        return cart;
+    }
 
     public void addProduct(Product p) {
         if (p != null)
