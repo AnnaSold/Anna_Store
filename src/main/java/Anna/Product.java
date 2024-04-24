@@ -19,4 +19,16 @@ public class Product {
         this.name = name;
         this.cost = cost;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getCost() {
+        return cost;
+    }
 }
